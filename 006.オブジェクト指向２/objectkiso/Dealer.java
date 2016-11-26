@@ -55,7 +55,7 @@ public class Dealer extends Human {
     
     public Dealer(){  
         for(int i=1;i<=52;i++){
-            if(i%13>10){
+            if(i%13>10||i%13==0){
                 cards.add(10);
             }else{
                 cards.add(i%13);
